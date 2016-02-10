@@ -6,6 +6,8 @@ dist: precise
 #  # setup mysql && make sure webp-ffi has all the dependencies
 #  - sudo apt-get update
 #  - sudo apt-get -y install mysql-server libjpeg-dev libpng-dev libtiff-dev libwebp-dev
+before install:
+  - sudo apt-get install libjpeg-dev libpng-dev libtiff-dev libwebp-dev 
 rvm:
   - 2.2.4
 
